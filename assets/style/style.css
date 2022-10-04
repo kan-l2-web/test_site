@@ -1,0 +1,154 @@
+@import "zeroing.css";
+
+body {
+	font-size: 22px;
+	font-family: Verdana;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+._container {
+	padding: 0 10px;
+	margin: 0 auto;
+	max-width: 1200px;
+	border-width: 0px 1px 0px;
+}
+
+.header {
+	flex: 1 0;
+	position: fixed;
+	background: #fff;
+	left: 0;
+	top: 0;
+	width: 100%;
+	border: 1px solid #eee;
+	box-shadow: 0px 0px 7px #000;
+}
+.header::before {
+	content: '';
+	flex: 1 0;
+	position: fixed;
+	background: #fff;
+	left: 0;
+	top: 0;
+	width: 100%;
+}
+.header__body {
+	padding: 10px 0;
+}
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.nav__link {
+	color: #282A35;
+	font-size: 28px;
+}
+.main {
+	flex: 1 0;
+}
+.main__body {
+	background: #fff;
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+	margin-top: 100px;
+	border: 1px solid #eee;
+	box-shadow: 0px 0px 7px #000;
+	border-radius: 10px;
+}
+.main__header {
+	padding-top: 40px;
+	flex: 1 1;
+	font-weight: bold;
+	margin-bottom: 40px;
+}
+.display-size {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid #eee;
+	height: 300px;
+	margin: 0 auto;
+	max-width: 400px;
+	font-size: 42px;
+}
+.main__content {
+	margin: 0px 15px;
+	flex: 1 0;
+	border: 1px solid #eee;
+	padding: 0 20px;
+}
+
+.main__content p {
+	padding: 20px 5px;
+	border: 1px solid #eee;
+	margin: 30px 0;
+}
+
+.main__footer {
+	flex: 0 0;
+	margin: 30px 10px;
+}
+.main__footer input,
+.main__footer textarea{
+	width: 100%;
+	border: 1px solid #eee;
+	margin: 10px 0;
+	padding: 5px 20px;
+}
+
+.main__footer:last-child input {
+	width: 100%;
+	border: 1px solid #eee;
+	margin: 10px 0;
+	padding: 5px 20px;
+}
+
+.footer {
+	flex: 0 0;
+	background: #fff;
+	margin: 50px 0 10px;
+}
+
+.footer__body {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-radius: 10px;
+	border: 1px solid #eee;
+	box-shadow: 0px 0px 7px #000;
+}
+
+.footer__body h1 {
+	flex: 1 0;
+	margin: 20px;
+	font-size: 32px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.footer__body p {
+	flex: 1 0;
+	margin: 10px auto;
+	max-width: 700px;
+	font-weight: medium;
+}
+
+.footer__body a {
+	flex: 0 0;
+	border: 1px solid #eee;
+	padding: 10px 30px;
+	font-weight: bold;
+	margin: 10px 0px 20px;
+}
+
+/* Activated block */
+
