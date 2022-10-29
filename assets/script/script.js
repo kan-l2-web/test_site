@@ -4,10 +4,10 @@ const password = document.getElementById('passw');
 
 
 
-const displayWidth = document.body.clientWidth;
-const displayHeight = document.body.clientHeight;
+const displayWidth = window.innerWidth;
+const displayHeight = window.innerHeight;
 
-displaySize.innerHTML = `<p>${displayWidth} x ${displayHeight}</p>`;
+displaySize.innerHTML = `<p>${displayWidth} X ${displayHeight}</p>`;
 
 password.addEventListener('input', function(e) {
 	let form = document.forms.form;
